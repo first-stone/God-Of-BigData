@@ -65,7 +65,7 @@ public interface InputSplit extends Serializable {
 }
 ```
 
-也就是说，InputSplit我们可以理解为是一个Partition索引，有了这个数据结构我们在看看上面图所示的case是如何工作的？当Source的并行度是1的时候，所有打partition数据都在同一个线程中读取，所有partition的state也在同一个state中维护，State存储信息格式如下：
+也就是说，InputSplit我们可以理解为是一个Partition索引，有了这个数据结构我们在看看上面图所示的case是如何工作的？当Source的并行度是1的时候，所有的partition数据都在同一个线程中读取，所有partition的state也在同一个state中维护，State存储信息格式如下：
 
 ![67cf069e8320cfeb0cf3fba127ed2cf9](Apache-Flink-漫谈系列(03)-State.resources/736E827E-E4C1-4412-8F0C-F51AECB68329.png)
 
